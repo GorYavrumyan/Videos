@@ -1,0 +1,58 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+
+.VideoConteiner {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: black;
+}
+
+/* Растягиваем встроенный плеер Google Диска на весь экран */
+.VideoConteiner iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+}
+
+.btn {
+    height: 50px;
+    width: 50px;
+    background-color: rgba(0, 205, 0, 0.042);
+    color: rgb(0, 205, 0, 0.042);
+    border-radius: 12px;
+    font-size: 30px;
+    padding: 20px;
+    margin: 20px;
+    transition: 0.1s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: solid rgb(0, 205, 0, 0.042) 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgba(0, 205, 0, 0.521);
+    color: rgb(0, 205, 0);
+    border: solid rgb(0, 205, 0) 5px;
+    transform: scale(1.1);
+}
