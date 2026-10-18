@@ -7,21 +7,37 @@
 body {
     min-height: 100vh;
     width: 100%;
+<<<<<<< HEAD
     /* Фирменный темный фон с полупрозрачным зеленым градиентом */
     background: linear-gradient(rgba(0, 20, 0, 0.85), rgba(0, 15, 0, 0.9)), url(./img/Fon.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: rgb(0, 230, 0);
+=======
+    /* Добавляем темный градиент поверх фоновой картинки, чтобы она не рябила */
+    background: linear-gradient(rgba(10, 15, 25, 0.85), rgba(10, 15, 25, 0.85)), url(./img/Fon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
+>>>>>>> 776a17c89d8229f008f28c859879699c012b6c30
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .header {
     height: 110px;
     width: 100%;
+<<<<<<< HEAD
     background-color: rgba(0, 60, 0, 0.85);
     backdrop-filter: blur(10px);
     border-bottom: 2px solid rgba(0, 205, 0, 0.3);
+=======
+    /* Полупрозрачная темная шапка с эффектом размытия фона (glassmorphism) */
+    background-color: rgba(18, 24, 38, 0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+>>>>>>> 776a17c89d8229f008f28c859879699c012b6c30
     padding: 20px 40px;
     display: flex;
     flex-direction: row;
@@ -36,13 +52,18 @@ body {
 .header img {
     height: 85px;
     width: auto;
+<<<<<<< HEAD
     filter: drop-shadow(0 2px 6px rgba(0, 205, 0, 0.4));
+=======
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+>>>>>>> 776a17c89d8229f008f28c859879699c012b6c30
 }
 
 .search {
     height: 55px;
     width: 400px;
     max-width: 100%;
+<<<<<<< HEAD
     background-color: rgba(0, 45, 0, 0.9);
     color: rgb(0, 255, 0);
     border-radius: 30px;
@@ -61,6 +82,26 @@ body {
 .search:focus {
     border-color: rgb(0, 255, 0);
     box-shadow: 0 0 20px rgba(0, 255, 0, 0.6);
+=======
+    background-color: rgba(28, 36, 54, 0.9);
+    color: #ffffff;
+    border-radius: 30px;
+    font-size: 18px;
+    padding: 0 20px;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.search::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.search:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
+>>>>>>> 776a17c89d8229f008f28c859879699c012b6c30
 }
 
 .Cart_conteiner {
@@ -76,10 +117,17 @@ body {
     max-width: 400px;
     height: 250px;
     border-radius: 16px;
+<<<<<<< HEAD
     background-color: rgba(0, 40, 0, 0.85);
     backdrop-filter: blur(5px);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
     border: 3px solid rgb(0, 150, 0);
+=======
+    background-color: rgba(24, 30, 48, 0.85);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+>>>>>>> 776a17c89d8229f008f28c859879699c012b6c30
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     flex-direction: column;
@@ -91,8 +139,13 @@ body {
 
 .cart:hover {
     transform: translateY(-8px);
+<<<<<<< HEAD
     box-shadow: 0 12px 30px rgba(0, 255, 0, 0.4);
     border-color: rgb(0, 255, 0);
+=======
+    box-shadow: 0 12px 30px rgba(59, 130, 246, 0.3);
+    border-color: rgba(59, 130, 246, 0.5);
+>>>>>>> 776a17c89d8229f008f28c859879699c012b6c30
     cursor: pointer;
 }
 
@@ -100,8 +153,13 @@ body {
     width: 100%;
     height: 180px;
     object-fit: cover;
+<<<<<<< HEAD
     border-top-left-radius: 13px;
     border-top-right-radius: 13px;
+=======
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+>>>>>>> 776a17c89d8229f008f28c859879699c012b6c30
     transition: transform 0.5s ease;
 }
 
@@ -110,14 +168,27 @@ body {
 }
 
 .cart h1 {
+<<<<<<< HEAD
     font-size: 18px;
     font-weight: 700;
     text-align: center;
     padding: 12px 10px;
     margin: 0;
     color: rgb(0, 255, 0) !important;
+=======
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    padding: 12px 10px;
+    margin: 0;
+    color: #f3f4f6 !important; /* Перебьем старый синий цвет на светлый, читаемый */
+>>>>>>> 776a17c89d8229f008f28c859879699c012b6c30
     background-color: transparent;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 776a17c89d8229f008f28c859879699c012b6c30
